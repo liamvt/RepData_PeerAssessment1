@@ -1,8 +1,8 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
-output: pdf_document
-        self_contained: false
-        ---
+output: html_document
+self_contained: false
+---
 
 ##Loading and pre-processing the data
 The data can be downloaded from the this [link]("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip")  
@@ -262,7 +262,7 @@ mean(stepsPerDay2) - mean(stepsPerDay)
 ## [1] 1304.984
 ```
 ## Are there differences in activity patterns between weekdays and weekends?
-1. Create a new factor variable called weekendTF, which is a factor with two levels ("weekend", "weekday"). Create the factor by applying the weekdays function to the date column and checking whether the output matches the strings "Saturday" or "Sunday".
+1. Create a new factor variable called weekendTF (weekend true or false), which is a factor with two levels ("weekend", "weekday"). Create the factor by applying the weekdays function to the date column and checking whether the output matches the strings "Saturday" or "Sunday".
 
 ```r
 activity$weekendTF <- factor((weekdays(as.Date(activity$date)) %in% c("Saturday", "Sunday")), levels=c(TRUE, FALSE), labels=c("weekend", "weekday"))
