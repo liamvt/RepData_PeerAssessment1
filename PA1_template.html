@@ -57,7 +57,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 <div id="loading-and-pre-processing-the-data" class="section level2">
 <h2>Loading and pre-processing the data</h2>
-<p>The data can be downloaded from the this <a href title="https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip">link</a><br />Save the zip file into your working directory and then unzip. Read in the csv file and use head() and tail() to take a first look at the data. There are 17568 rows and 3 variables. Note that there are some NA values in the steps column.</p>
+<p>The data can be downloaded from the this repo (activity.zip) Save the zip file into your working directory and then unzip. Read in the csv file and use head() and tail() to take a first look at the data. There are 17568 rows and 3 variables. Note that there are some NA values in the steps column.</p>
 <pre class="r"><code>if(!file.exists(&quot;activity.csv&quot;)){unzip(&quot;activity.zip&quot;)}
 activity &lt;- read.csv(&quot;activity.csv&quot;)
 str(activity)</code></pre>

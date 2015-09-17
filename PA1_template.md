@@ -2,10 +2,11 @@
 title: "Reproducible Research: Peer Assessment 1"
 output: html_document
 self_contained: false
+
 ---
 
 ##Loading and pre-processing the data
-The data can be downloaded from the this [link]("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip")  
+The data can be downloaded from the this repo (activity.zip) 
 Save the zip file into your working directory and then unzip. Read in the csv file and use head() and tail() to take a first look at the data. There are 17568 rows and 3 variables. Note that there are some NA values in the steps column.
 
 
